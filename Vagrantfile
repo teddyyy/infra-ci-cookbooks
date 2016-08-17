@@ -19,6 +19,10 @@ Vagrant.configure("2") do |config|
    host.vm.hostname = "webapp"
   end
 
+  config.vm.define :logapp do |host|
+   host.vm.hostname = "logapp"
+  end
+
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
