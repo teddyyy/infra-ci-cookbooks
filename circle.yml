@@ -11,7 +11,7 @@ dependencies:
   - |
     mkdir -p $HOME/.terraform
     if [ -z "$(ls -A $HOME/.terraform/terraform_${TERRAFORM_VERSION}_linux_amd64.zip)" ]; then
-	   cd $HOME/.terraform
+       cd $HOME/.terraform
        curl -LO https://dl.bintray.com/mitchellh/terraform/terraform_${TERRAFORM_VERSION}_linux_amd64.zip
        unzip -o terraform_${TERRAFORM_VERSION}_linux_amd64.zip
     fi
